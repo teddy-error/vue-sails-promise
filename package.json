@@ -1,22 +1,25 @@
 {
-  "name": "vue-sails",
+  "name": "vue-sails-promise",
   "version": "0.1.1",
   "description": "Integration with the Sails framework for Vue.js",
   "main": "vue-sails.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:lewebsimple/vue-sails.git"
+    "url": "git+https://github.com:teddy-error/vue-sails-promise.git"
   },
   "keywords": [
     "vue",
     "sails"
   ],
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
+  "contributors": [
+    "Bin Ury"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lewebsimple/vue-sails/issues"
+    "url": "https://github.com/teddy-error/vue-sails-promise/issues"
   },
-  "homepage": "https://github.com/lewebsimple/vue-sails#readme",
+  "homepage": "https://github.com/teddy-error/vue-sails-promise#readme",
   "dependencies": {
     "sails.io.js": "^1.1.4"
   },

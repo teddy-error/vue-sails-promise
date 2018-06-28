@@ -1,14 +1,14 @@
-# vue-sails
+# vue-sails-promise
 
 > [Sails](http://sailsjs.com/) is the most popular MVC framework for Node.js.
-> Vue-Sails is a plugin for Vue.js that integrates it with Sails.
+> Vue-Sails-Promise is a plugin for Vue.js that integrates it with Sails.
 
 **NOTE:** It's supposed to be compatible both with Vue 1.x and 2.x. It requires IE9+ or Safari 5+
 
 ### Install
 
 ``` bash
-npm install vue-sails --save
+npm install vue-sails-promise
 ```
 
 ### Usage
@@ -23,9 +23,9 @@ const io = sailsIOClient(socketIOClient);
 // io.sails.url = 'http://localhost:1337';
 // io.sails.environment = process.env.NODE_ENV || 'development';
 
-// Include vue-sails as a CommonJS module
+// Include vue-sails-promise as a CommonJS module
 const Vue = require('vue');
-const vueSails = require('vue-sails');
+const vueSails = require('vue-sails-promise');
 
 // Enable the plugin globally
 Vue.use(vueSails, io)
@@ -34,15 +34,7 @@ Vue.use(vueSails, io)
 Now in every component you get a new property called `$io`, which allows you to interact with the [Sails socket client](http://sailsjs.com/documentation/reference/web-sockets/socket-client):
 
 ``` js
-this.$io.socket.get(url, data, function (resData, jwres){
-  // ...
-});
-
-// or
-
-this.$io.socket.on(eventIdentity, function (msg) {
-  // ...
-});
+this.$io.socket.get(url, data).then(res => ...)
 ```
 
 ### License
