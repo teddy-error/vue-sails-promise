@@ -1,0 +1,24 @@
+{
+  "name": "vue-sails",
+  "version": "0.1.1",
+  "description": "Integration with the Sails framework for Vue.js",
+  "main": "vue-sails.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:lewebsimple/vue-sails.git"
+  },
+  "keywords": [
+    "vue",
+    "sails"
+  ],
+  "author": "Pascal Martineau <pascal@lewebsimple.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lewebsimple/vue-sails/issues"
+  },
+  "homepage": "https://github.com/lewebsimple/vue-sails#readme",
+  "dependencies": {
+    "sails.io.js": "^1.1.4"
+  },
+  "devDependencies": {}
+}
