@@ -1,6 +1,6 @@
 {
   "name": "vue-sails-promise",
-  "version": "0.1.2",
+  "version": "0.1.21",
   "description": "Integration with the Sails framework for Vue.js",
   "main": "vue-sails.js",
   "repository": {
