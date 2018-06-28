@@ -2,29 +2,29 @@
 (function() {
   'use strict';
 
-
   var plugin = {
     install: function(Vue, io) {
-      var promiseForRequest = (type, url, data) => new Promise(resolve => io[type](url, data, resolve));
       var vueSails = {
+        promiseForRequest(type, url, data){
+          return new Promise(resolve => io.socket[type](url, data, resolve));
+        },
         get(url, data){
-          return promiseForRequest('get', url, data);
+          return this.promiseForRequest('get', url, data);
         },
         post(url, data){
-          return promiseForRequest('post', url, data);
+          return this.promiseForRequest('post', url, data);
         },
         put(url, data){
-          return promiseForRequest('put', url, data);
+          return this.promiseForRequest('put', url, data);
         },
         patch(url, data){
-          return promiseForRequest('patch', url, data);
+          return this.promiseForRequest('patch', url, data);
         },
         delete(url, data){
-          return promiseForRequest('delete', url, data);
+          return this.promiseForRequest('delete', url, data);
         },
         on: io.on,
         off: io.off,
-
       };
 
       // Every component will have this
