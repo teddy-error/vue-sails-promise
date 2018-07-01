@@ -1,6 +1,6 @@
 {
   "name": "vue-sails-promise",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Integration with the Sails framework for Vue.js",
   "main": "vue-sails.js",
   "repository": {
@@ -20,8 +20,6 @@
     "url": "https://github.com/teddy-error/vue-sails-promise/issues"
   },
   "homepage": "https://github.com/teddy-error/vue-sails-promise#readme",
-  "dependencies": {
-    "sails.io.js": "^1.1.4"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }

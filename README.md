@@ -34,7 +34,7 @@ Vue.use(vueSails, io)
 Now in every component you get a new property called `$io`, which allows you to interact with the [Sails socket client](http://sailsjs.com/documentation/reference/web-sockets/socket-client):
 
 ``` js
-this.$io.socket.get(url, data).then(res => ...)
+this.$io.get(url, data).then(res => ...)
 ```
 
 ### License
