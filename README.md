@@ -3,7 +3,7 @@
 > [Sails](http://sailsjs.com/) is the most popular MVC framework for Node.js.
 > Vue-Sails-Promise is a plugin for Vue.js that integrates it with Sails.
 
-**NOTE:** It's supposed to be compatible both with Vue 1.x and 2.x. It requires IE9+ or Safari 5+
+**NOTE:** It's supposed to be compatible both with Vue 1.x and 2.x.
 
 ### Install
 
